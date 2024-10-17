@@ -28,12 +28,8 @@ class CheckoutObjects{
           return $("//button[@id='finish']");
      }
 
-     get backHome(){
-          return $("//button[@id='back-to-products']")
-     }
-     
      get completeOrder(){
-          return $("//div[@class='checkout_complete_container']/descendant::h2");
+          return $("//div[@class='checkout_complete_container']/child::h2");
      }
 
 }

@@ -41,36 +41,7 @@ class AddToCartActions {
           let pPrice= utilities.trimsFloat(await pPriceText);
           this.productPrices.push(pPrice);
      }
-
-     // async clickAddToCartButton(n) {
-     //      let i = 1;
-     //      while (i <= n) {
-     //           await $(`//div[@class='inventory_list']/descendant::button[${i}]`).click();
-     //           i++;
-     //      }
-     // }
      
-     // async productNameHome(i) {
-     //      let productNameElement = await $(`//div[@class='inventory_list']/descendant::div[@class='inventory_item_name '][${i}]`).getText();
-     //      return productNameElement;
-     // }
-     // async productPriceHome(i) {
-     //      let priceText = await $(`//div[@class='inventory_list']/descendant::div[@class='inventory_item_price'][${i}]`).getText();
-     //      let productPrice = utilities.trimsFloat(await priceText); 
-     //      return productPrice;
-     // }
-
-     // async clickProduct() {
-     //      await addToCartObjects.productView.click();
-     // }
-     // async clickCart() {
-     //      await addToCartObjects.cartView.click();
-     // }
-
-     // async addToCart(n) {
-     //      await this.clickAddToCartButton(n); 
-     // }
-
      async viewCart(){
           await addToCartObjects.cartIcon.click();
      }

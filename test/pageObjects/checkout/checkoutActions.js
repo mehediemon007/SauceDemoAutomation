@@ -47,11 +47,7 @@ class CheckoutActions{
      async clickFinishButton(){
           await checkoutObjects.finishedButton.click();
      }
-
-     async clickBackHomeButtons(){
-          await checkoutObjects.backHome.click();
-     }
-
+     
      async completeOrderMessage(){
           return await checkoutObjects.completeOrder.getText();
      }
