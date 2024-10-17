@@ -28,6 +28,11 @@ export const config = {
         verifyOrder,
         filterAndCompleteOrderVerify
     ],
+    suites: {
+        Login_And_CheckoutVerify: [
+            [loginErrorMessage, verifyOrder, filterAndCompleteOrderVerify]
+        ]
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'

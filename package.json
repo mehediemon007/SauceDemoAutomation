@@ -11,6 +11,7 @@
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
     "test": "npx wdio run ./wdio.conf.js",
+    "suite": "wdio wdio.conf.js --suite Login_And_CheckoutVerify ",
     "report": "allure generate allure-results --clean && allure open"
   },
   "dependencies": {
